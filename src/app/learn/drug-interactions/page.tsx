@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AdUnit from "@/components/AdUnit";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "Drug Interactions: When Medications Collide",

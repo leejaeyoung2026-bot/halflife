@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AdUnit from "@/components/AdUnit";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "Understanding Steady State in Pharmacokinetics",
@@ -199,6 +201,8 @@ export default function SteadyStatePage() {
 
         {/* Rule */}
         <div style={ruleStyle} />
+
+        <AuthorByline />
 
         {/* Prose content */}
         <div style={proseWrap}>

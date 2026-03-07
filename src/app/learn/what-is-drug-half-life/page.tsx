@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AdUnit from "@/components/AdUnit";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "What is Drug Half-Life? A Complete Guide",
@@ -134,6 +136,8 @@ export default function WhatIsDrugHalfLifePage() {
               marginBottom: "3rem",
             }}
           />
+
+          <AuthorByline />
 
           {/* Article body */}
           <div

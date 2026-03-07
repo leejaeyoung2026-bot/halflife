@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AdUnit from "@/components/AdUnit";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "Why Dosing Schedules Exist: The Science of Medication Timing",
@@ -176,6 +178,8 @@ export default function DosingSchedulesPage() {
               gap: "2.5rem",
             }}
           >
+
+            <AuthorByline />
 
             {/* Opening */}
             <div>

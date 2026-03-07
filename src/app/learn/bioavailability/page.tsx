@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AdUnit from "@/components/AdUnit";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "Bioavailability: Why How You Take a Drug Matters",
@@ -219,6 +221,8 @@ export default function BioavailabilityPage() {
               gap: "2.5rem",
             }}
           >
+
+            <AuthorByline />
 
             {/* Definition */}
             <div>

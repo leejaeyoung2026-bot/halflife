@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import AdUnit from "@/components/AdUnit";
+import ArticleJsonLd from "@/components/ArticleJsonLd";
+import AuthorByline from "@/components/AuthorByline";
 
 export const metadata: Metadata = {
   title: "The Science Behind Caffeine: Pharmacology of the World's Most Popular Drug",
@@ -221,6 +223,8 @@ export default function CaffeineSciencePage() {
 
         {/* Rule */}
         <div style={ruleStyle} />
+
+        <AuthorByline />
 
         {/* Prose content */}
         <div style={proseWrap}>
