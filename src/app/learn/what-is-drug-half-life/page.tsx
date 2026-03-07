@@ -923,6 +923,72 @@ export default function WhatIsDrugHalfLifePage() {
               </p>
             </div>
 
+            {/* References */}
+            <div
+              style={{
+                borderTop: "1px solid var(--rule)",
+                paddingTop: "2rem",
+                marginTop: "1rem",
+              }}
+            >
+              <h2
+                style={{
+                  fontFamily: "var(--font-serif), ui-serif, Georgia, serif",
+                  fontSize: "1.125rem",
+                  fontWeight: 400,
+                  color: "var(--ink)",
+                  margin: "0 0 0.875rem",
+                }}
+              >
+                References &amp; Further Reading
+              </h2>
+              <ol
+                style={{
+                  margin: 0,
+                  paddingLeft: "1.5rem",
+                  display: "flex",
+                  flexDirection: "column",
+                  gap: "0.5rem",
+                  fontFamily: "var(--font-sans), ui-sans-serif, sans-serif",
+                  fontSize: "0.875rem",
+                  lineHeight: 1.65,
+                  color: "var(--ink-soft)",
+                }}
+              >
+                <li>
+                  Brunton LL, Knollmann BC, eds.{" "}
+                  <em>Goodman &amp; Gilman&#x2019;s The Pharmacological Basis of Therapeutics</em>.
+                  {" "}14th ed. McGraw-Hill; 2023. Chapters 2&ndash;3 (Pharmacokinetics).
+                </li>
+                <li>
+                  Rowland M, Tozer TN.{" "}
+                  <em>Clinical Pharmacokinetics and Pharmacodynamics: Concepts and Applications</em>.
+                  {" "}4th ed. Lippincott Williams &amp; Wilkins; 2011.
+                </li>
+                <li>
+                  Winter ME.{" "}
+                  <em>Basic Clinical Pharmacokinetics</em>.
+                  {" "}5th ed. Lippincott Williams &amp; Wilkins; 2010.
+                </li>
+                <li>
+                  U.S. Food and Drug Administration. Individual drug prescribing information (package inserts) for referenced medications. Available at{" "}
+                  <a
+                    href="https://dailymed.nlm.nih.gov"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: "var(--accent)", textDecoration: "none" }}
+                  >
+                    DailyMed (NIH)
+                  </a>
+                  .
+                </li>
+                <li>
+                  Benet LZ, Zia-Amirhosseini P. Basic principles of pharmacokinetics.{" "}
+                  <em>Toxicol Pathol</em>. 1995;23(2):115&ndash;123.
+                </li>
+              </ol>
+            </div>
+
             {/* CTA: Try simulator */}
             <div
               style={{
