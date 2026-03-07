@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
   title: "A Pharmacist's Guide to OTC Pain Relievers",
@@ -524,6 +525,11 @@ export default function OtcPainRelieversPage() {
               <p style={{ margin: 0 }}>
                 The downside of a long half-life: naproxen accumulates more with repeated dosing, and its side effect burden — particularly GI and cardiovascular risk — is extended proportionally. The OTC dose cap of 660 mg/day (two 220 mg tablets) is deliberately conservative; prescription naproxen can reach 1,500 mg/day under physician supervision. Naproxen is not recommended for prolonged use in patients with kidney disease, heart failure, or a history of peptic ulcer disease.
               </p>
+            </div>
+
+            {/* AdSense — mid-article */}
+            <div className="ad-container" style={{ margin: "2rem 0" }}>
+              <AdUnit slot="2345678901" format="auto" />
             </div>
 
             {/* Comparison Table */}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
   title: "The Science Behind Caffeine: Pharmacology of the World's Most Popular Drug",
@@ -505,6 +506,11 @@ export default function CaffeineSciencePage() {
               sensitivity suddenly increases — a pharmacokinetic basis for the commonly reported
               post-quitting coffee intolerance.
             </p>
+          </div>
+
+          {/* AdSense — mid-article */}
+          <div className="ad-container" style={{ margin: "2rem 0" }}>
+            <AdUnit slot="2345678901" format="auto" />
           </div>
 
           {/* ── Section 5: Caffeine Content Comparison ── */}

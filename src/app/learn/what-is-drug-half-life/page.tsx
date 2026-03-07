@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
   title: "What is Drug Half-Life? A Complete Guide",
@@ -426,6 +427,11 @@ export default function WhatIsDrugHalfLifePage() {
                 confirmed that caffeine consumed 6 hours before bedtime reduces total
                 sleep time by an average of one hour.
               </p>
+            </div>
+
+            {/* AdSense — mid-article */}
+            <div className="ad-container" style={{ margin: "2rem 0" }}>
+              <AdUnit slot="2345678901" format="auto" />
             </div>
 
             {/* Section 5: Why it matters */}

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
   title: "Pharmacokinetics 101: How Drugs Work in Your Body",
@@ -804,6 +805,11 @@ export default function Pharmacokinetics101Page() {
                 depending on whether the drug is primarily cleared renally,
                 hepatically, or both.
               </p>
+            </div>
+
+            {/* AdSense — mid-article */}
+            <div className="ad-container" style={{ margin: "2rem 0" }}>
+              <AdUnit slot="2345678901" format="auto" />
             </div>
 
             {/* Section 4: Concentration-time curve */}

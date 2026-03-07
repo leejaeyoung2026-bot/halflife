@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
   title: "Drug Interactions: When Medications Collide",
@@ -416,6 +417,11 @@ export default function DrugInteractionsPage() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* AdSense — mid-article */}
+            <div className="ad-container" style={{ margin: "2rem 0" }}>
+              <AdUnit slot="2345678901" format="auto" />
             </div>
 
             {/* 5 Dangerous Interactions */}

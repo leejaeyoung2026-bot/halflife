@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
   title: "Understanding Steady State in Pharmacokinetics",
@@ -474,6 +475,11 @@ export default function SteadyStatePage() {
                 requires knowing its half-life.
               </p>
             </div>
+          </div>
+
+          {/* AdSense — mid-article */}
+          <div className="ad-container" style={{ margin: "2rem 0" }}>
+            <AdUnit slot="2345678901" format="auto" />
           </div>
 
           {/* ── Section 5: Loading Doses ── */}

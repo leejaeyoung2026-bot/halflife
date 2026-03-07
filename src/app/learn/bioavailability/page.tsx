@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import AdUnit from "@/components/AdUnit";
 
 export const metadata: Metadata = {
   title: "Bioavailability: Why How You Take a Drug Matters",
@@ -454,6 +455,11 @@ export default function BioavailabilityPage() {
                   </div>
                 ))}
               </div>
+            </div>
+
+            {/* AdSense — mid-article */}
+            <div className="ad-container" style={{ margin: "2rem 0" }}>
+              <AdUnit slot="2345678901" format="auto" />
             </div>
 
             {/* Immediate release vs extended release */}
