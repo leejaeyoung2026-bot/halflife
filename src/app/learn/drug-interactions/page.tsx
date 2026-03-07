@@ -651,6 +651,18 @@ export default function DrugInteractionsPage() {
               </p>
             </div>
 
+            {/* References */}
+            <div style={{ borderTop: "1px solid var(--rule)", paddingTop: "2rem", marginTop: "1rem" }}>
+              <h2 style={{ fontFamily: "var(--font-serif), ui-serif, Georgia, serif", fontSize: "1.125rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 0.875rem" }}>
+                References &amp; Further Reading
+              </h2>
+              <ol style={{ margin: 0, paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem", fontFamily: "var(--font-sans), ui-sans-serif, sans-serif", fontSize: "0.875rem", lineHeight: 1.65, color: "var(--ink-soft)" }}>
+                <li>Brunton LL, Knollmann BC, eds. <em>Goodman &amp; Gilman&apos;s The Pharmacological Basis of Therapeutics</em>. 14th ed. McGraw-Hill; 2023. Chapter 6 (Drug Metabolism).</li>
+                <li>Lynch T, Price A. The effect of cytochrome P450 metabolism on drug response, interactions, and adverse effects. <em>Am Fam Physician</em>. 2007;76(3):391-396.</li>
+                <li>Palleria C, et al. Pharmacokinetic drug-drug interaction and their implication in clinical management. <em>J Res Med Sci</em>. 2013;18(7):601-610.</li>
+                <li>Flockhart DA. Drug Interactions: Cytochrome P450 Drug Interaction Table. Indiana University School of Medicine; 2007.</li>
+              </ol>
+            </div>
             {/* Continue Learning */}
             <div>
               <p

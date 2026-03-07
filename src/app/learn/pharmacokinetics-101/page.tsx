@@ -997,6 +997,18 @@ export default function Pharmacokinetics101Page() {
               </p>
             </div>
 
+            {/* References */}
+            <div style={{ borderTop: "1px solid var(--rule)", paddingTop: "2rem", marginTop: "1rem" }}>
+              <h2 style={{ fontFamily: "var(--font-serif), ui-serif, Georgia, serif", fontSize: "1.125rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 0.875rem" }}>
+                References &amp; Further Reading
+              </h2>
+              <ol style={{ margin: 0, paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem", fontFamily: "var(--font-sans), ui-sans-serif, sans-serif", fontSize: "0.875rem", lineHeight: 1.65, color: "var(--ink-soft)" }}>
+                <li>Brunton LL, Knollmann BC, eds. <em>Goodman &amp; Gilman&apos;s The Pharmacological Basis of Therapeutics</em>. 14th ed. McGraw-Hill; 2023.</li>
+                <li>Shargel L, Yu ABC. <em>Applied Biopharmaceutics &amp; Pharmacokinetics</em>. 7th ed. McGraw-Hill; 2016.</li>
+                <li>Rowland M, Tozer TN. <em>Clinical Pharmacokinetics and Pharmacodynamics</em>. 4th ed. Lippincott Williams &amp; Wilkins; 2011.</li>
+                <li>Toutain PL, Bousquet-Mélou A. Plasma terminal half-life. <em>J Vet Pharmacol Ther</em>. 2004;27(6):427-439.</li>
+              </ol>
+            </div>
             {/* CTA: Try simulator */}
             <div
               style={{

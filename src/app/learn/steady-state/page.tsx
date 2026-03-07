@@ -717,6 +717,18 @@ export default function SteadyStatePage() {
             </p>
           </div>
 
+            {/* References */}
+            <div style={{ borderTop: "1px solid var(--rule)", paddingTop: "2rem", marginTop: "1rem" }}>
+              <h2 style={{ fontFamily: "var(--font-serif), ui-serif, Georgia, serif", fontSize: "1.125rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 0.875rem" }}>
+                References &amp; Further Reading
+              </h2>
+              <ol style={{ margin: 0, paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem", fontFamily: "var(--font-sans), ui-sans-serif, sans-serif", fontSize: "0.875rem", lineHeight: 1.65, color: "var(--ink-soft)" }}>
+                <li>Brunton LL, Knollmann BC, eds. <em>Goodman &amp; Gilman&apos;s The Pharmacological Basis of Therapeutics</em>. 14th ed. McGraw-Hill; 2023.</li>
+                <li>Winter ME. <em>Basic Clinical Pharmacokinetics</em>. 5th ed. Lippincott Williams &amp; Wilkins; 2010.</li>
+                <li>Holford NHG. Pharmacokinetics &amp; pharmacodynamics: rational dosing &amp; the time course of drug action. In: Katzung BG, ed. <em>Basic &amp; Clinical Pharmacology</em>. 14th ed. 2018.</li>
+                <li>Tozer TN, Rowland M. <em>Introduction to Pharmacokinetics and Pharmacodynamics</em>. Lippincott Williams &amp; Wilkins; 2006.</li>
+              </ol>
+            </div>
           {/* ── Continue Learning ── */}
           <div style={continueSection}>
             <p style={monoLabel}>CONTINUE LEARNING</p>

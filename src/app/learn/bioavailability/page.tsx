@@ -641,6 +641,18 @@ export default function BioavailabilityPage() {
               </p>
             </div>
 
+            {/* References */}
+            <div style={{ borderTop: "1px solid var(--rule)", paddingTop: "2rem", marginTop: "1rem" }}>
+              <h2 style={{ fontFamily: "var(--font-serif), ui-serif, Georgia, serif", fontSize: "1.125rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 0.875rem" }}>
+                References &amp; Further Reading
+              </h2>
+              <ol style={{ margin: 0, paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem", fontFamily: "var(--font-sans), ui-sans-serif, sans-serif", fontSize: "0.875rem", lineHeight: 1.65, color: "var(--ink-soft)" }}>
+                <li>Shargel L, Yu ABC. <em>Applied Biopharmaceutics &amp; Pharmacokinetics</em>. 7th ed. McGraw-Hill; 2016.</li>
+                <li>Brunton LL, Knollmann BC, eds. <em>Goodman &amp; Gilman&apos;s The Pharmacological Basis of Therapeutics</em>. 14th ed. McGraw-Hill; 2023. Chapter 2 (Pharmacokinetics).</li>
+                <li>FDA. Guidance for Industry: Bioavailability and Bioequivalence Studies Submitted in NDAs or INDs. FDA; 2014.</li>
+                <li>Veber DF, et al. Molecular properties that influence the oral bioavailability of drug candidates. <em>J Med Chem</em>. 2002;45(12):2615-2623.</li>
+              </ol>
+            </div>
             {/* Continue Learning */}
             <div>
               <p

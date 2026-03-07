@@ -372,9 +372,79 @@ const categories: FAQCategory[] = [
   },
 ];
 
+// FAQ JSON-LD data for rich results (plain text answers for schema.org)
+const faqSchemaData = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "What is HalfLife?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "HalfLife is a free, interactive pharmacokinetics visualization tool that shows how drug concentration changes over time. It uses established mathematical models of drug absorption, distribution, metabolism, and elimination to simulate how medications behave in the human body.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is HalfLife a medical tool? Can I use it for medical decisions?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. HalfLife is strictly an educational tool designed to help you understand pharmacokinetics concepts. It is not intended to be used for clinical decision-making, dose calculations, or any medical purpose. Always consult a licensed pharmacist or physician before making any decisions about medications.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What is drug half-life?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Drug half-life (t½) is the time required for the concentration of a drug in the body to decrease by 50%. It determines how frequently a medication needs to be taken and how long it stays active in the body. A drug with a short half-life (like ibuprofen at 2 hours) needs to be taken more frequently than one with a long half-life (like fluoxetine at 1-4 days).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Where does the drug data come from?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "All pharmacokinetic parameters (half-lives, volumes of distribution, bioavailability) used in HalfLife are sourced from peer-reviewed clinical literature, FDA-approved prescribing information (package inserts), and authoritative pharmacology references including Goodman & Gilman's The Pharmacological Basis of Therapeutics.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "What does bioavailability mean?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Bioavailability is the fraction of an administered dose that reaches the systemic circulation in its active form. An IV injection has 100% bioavailability. Oral medications have lower bioavailability due to incomplete absorption and first-pass metabolism in the liver. For example, oral morphine has about 25-35% bioavailability compared to IV administration.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Is HalfLife free to use?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. HalfLife is completely free to use. There is no account required, no subscription, and no in-app purchases. It is funded by non-intrusive advertising.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Does HalfLife collect personal data?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "HalfLife itself does not collect personal data. However, third-party services including Google Analytics and Google AdSense may collect usage data and set cookies. See our Privacy Policy for details.",
+      },
+    },
+  ],
+};
+
+
 export default function FAQPage() {
   return (
-    <section style={{ padding: "10rem 2rem 6rem" }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchemaData) }}
+      />
+      <section style={{ padding: "10rem 2rem 6rem" }}>
       <div style={{ maxWidth: "860px", margin: "0 auto" }}>
 
         {/* Mono label */}
@@ -638,5 +708,6 @@ export default function FAQPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

@@ -793,6 +793,18 @@ export default function CaffeineSciencePage() {
             </p>
           </div>
 
+            {/* References */}
+            <div style={{ borderTop: "1px solid var(--rule)", paddingTop: "2rem", marginTop: "1rem" }}>
+              <h2 style={{ fontFamily: "var(--font-serif), ui-serif, Georgia, serif", fontSize: "1.125rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 0.875rem" }}>
+                References &amp; Further Reading
+              </h2>
+              <ol style={{ margin: 0, paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem", fontFamily: "var(--font-sans), ui-sans-serif, sans-serif", fontSize: "0.875rem", lineHeight: 1.65, color: "var(--ink-soft)" }}>
+                <li>Fredholm BB, et al. Actions of caffeine in the brain with special reference to factors that contribute to its widespread use. <em>Pharmacol Rev</em>. 1999;51(1):83-133.</li>
+                <li>Nehlig A. Interindividual differences in caffeine metabolism and factors driving caffeine consumption. <em>Pharmacol Rev</em>. 2018;70(2):384-411.</li>
+                <li>Temple JL, et al. The Safety of Ingested Caffeine: A Comprehensive Review. <em>Front Psychiatry</em>. 2017;8:80.</li>
+                <li>FDA. Spilling the Beans: How Much Caffeine is Too Much? FDA; 2023.</li>
+              </ol>
+            </div>
           {/* ── Continue Learning ── */}
           <div style={continueSection}>
             <p style={monoLabel}>CONTINUE LEARNING</p>

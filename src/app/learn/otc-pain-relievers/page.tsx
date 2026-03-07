@@ -809,6 +809,18 @@ export default function OtcPainRelieversPage() {
               </p>
             </div>
 
+            {/* References */}
+            <div style={{ borderTop: "1px solid var(--rule)", paddingTop: "2rem", marginTop: "1rem" }}>
+              <h2 style={{ fontFamily: "var(--font-serif), ui-serif, Georgia, serif", fontSize: "1.125rem", fontWeight: 400, color: "var(--ink)", margin: "0 0 0.875rem" }}>
+                References &amp; Further Reading
+              </h2>
+              <ol style={{ margin: 0, paddingLeft: "1.5rem", display: "flex", flexDirection: "column", gap: "0.5rem", fontFamily: "var(--font-sans), ui-sans-serif, sans-serif", fontSize: "0.875rem", lineHeight: 1.65, color: "var(--ink-soft)" }}>
+                <li>Brunton LL, Knollmann BC, eds. <em>Goodman &amp; Gilman&apos;s The Pharmacological Basis of Therapeutics</em>. 14th ed. McGraw-Hill; 2023. Chapter 38 (NSAIDs).</li>
+                <li>FDA prescribing information for acetaminophen, ibuprofen, aspirin, and naproxen sodium. Available at DailyMed (NIH).</li>
+                <li>Patrono C, et al. Platelet-Active Drugs: The Relationships Among Dose, Effectiveness, and Side Effects. <em>Chest</em>. 2008;133(6 Suppl):199S-233S.</li>
+                <li>Jóźwiak-Bebenista M, Nowak JZ. Paracetamol: mechanism of action, applications and safety concern. <em>Acta Pol Pharm</em>. 2014;71(1):11-23.</li>
+              </ol>
+            </div>
             {/* Continue Learning */}
             <div>
               <p
