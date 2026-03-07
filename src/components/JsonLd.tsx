@@ -16,12 +16,20 @@ export default function JsonLd() {
     author: {
       "@type": "Person",
       name: "Jay",
-      description: "Pharmacist and developer",
+      jobTitle: "Licensed Pharmacist",
+      description: "Licensed pharmacist and developer specializing in pharmacokinetics and clinical pharmacy",
+      url: "https://halflife.vibed-lab.com/about",
+      knowsAbout: ["Pharmacokinetics", "Drug Half-Life", "ADME", "Clinical Pharmacy", "Pharmacodynamics"],
     },
     publisher: {
       "@type": "Organization",
       name: "Vibed Lab",
       url: "https://vibed-lab.com",
+    },
+    reviewedBy: {
+      "@type": "Person",
+      name: "Jay",
+      jobTitle: "Licensed Pharmacist",
     },
   };
 

@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "About — HalfLife by Vibed Lab",
+  title: "About",
   description:
-    "HalfLife is a pharmacokinetics visualization tool built by Jay, a licensed pharmacist and researcher. Learn who built it and why it exists.",
+    "HalfLife is built by Jay, a licensed pharmacist with specialized expertise in pharmacokinetics. Learn about the tool, its mission, and the pharmacist behind it.",
   openGraph: {
-    title: "About — HalfLife by Vibed Lab",
+    title: "About",
     description:
       "HalfLife is a pharmacokinetics visualization tool built by Jay, a licensed pharmacist and researcher. Learn who built it and why it exists.",
     url: "https://halflife.vibed-lab.com/about",
@@ -20,9 +21,41 @@ export const metadata: Metadata = {
   },
 };
 
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Jay",
+  jobTitle: "Licensed Pharmacist",
+  description: "Licensed pharmacist and developer specializing in pharmacokinetics and clinical pharmacy. Creator of HalfLife and PK·Swift.",
+  url: "https://halflife.vibed-lab.com/about",
+  knowsAbout: [
+    "Pharmacokinetics",
+    "Drug Half-Life",
+    "ADME",
+    "Clinical Pharmacy",
+    "Pharmacodynamics",
+    "Steady-State Pharmacokinetics",
+  ],
+  worksFor: {
+    "@type": "Organization",
+    name: "Vibed Lab",
+    url: "https://vibed-lab.com",
+  },
+  hasCredential: {
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "license",
+    name: "Licensed Pharmacist",
+  },
+};
+
 export default function AboutPage() {
   return (
-    <section style={{ padding: "10rem 2rem 6rem" }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <section style={{ padding: "10rem 2rem 6rem" }}>
       <div style={{ maxWidth: "800px", margin: "0 auto" }}>
         {/* Mono label */}
         <p
@@ -141,33 +174,88 @@ export default function AboutPage() {
               backgroundColor: "var(--cream)",
             }}
           >
+            {/* Author byline */}
+            <p
+              style={{
+                fontFamily: "var(--font-mono), ui-monospace, monospace",
+                fontSize: "0.6875rem",
+                fontWeight: 500,
+                letterSpacing: "0.1em",
+                textTransform: "uppercase",
+                color: "var(--accent)",
+                margin: "0 0 0.75rem",
+              }}
+            >
+              AUTHOR
+            </p>
             <h2
               style={{
                 fontFamily: "var(--font-serif), ui-serif, Georgia, serif",
                 fontSize: "1.375rem",
                 fontWeight: 400,
                 color: "var(--ink)",
-                margin: "0 0 0.75rem",
+                margin: "0 0 0.25rem",
               }}
             >
-              Built by Jay
+              Jay
             </h2>
+            <p
+              style={{
+                fontFamily: "var(--font-sans), ui-sans-serif, sans-serif",
+                fontSize: "0.875rem",
+                color: "var(--accent)",
+                margin: "0 0 1rem",
+                fontWeight: 500,
+              }}
+            >
+              Licensed Pharmacist · Pharmacokinetics Specialist · Developer
+            </p>
             <p style={{ margin: 0 }}>
-              Jay is a licensed pharmacist and researcher who has spent years
-              working at the intersection of clinical practice and software
-              development. His professional tool,{" "}
+              Jay is a licensed pharmacist with specialized expertise in
+              pharmacokinetics and clinical pharmacy. He has spent years working
+              at the intersection of clinical practice and software development,
+              translating complex pharmacokinetic principles into tools that
+              clinicians and patients can actually use.
+            </p>
+            <p style={{ margin: "1rem 0 0" }}>
+              His professional pharmacokinetics calculation tool,{" "}
               <strong style={{ color: "var(--ink)", fontWeight: 600 }}>
                 PK&middot;Swift
               </strong>
               , is used by pharmacists and clinical researchers for advanced
-              pharmacokinetic calculations.
+              dose individualization and PK modeling. HalfLife is Jay&apos;s
+              effort to bring that same clinical rigor to a general audience —
+              stripping away the complexity while preserving the accuracy.
             </p>
             <p style={{ margin: "1rem 0 0" }}>
-              HalfLife is Jay&apos;s attempt to bring that same rigor to a
-              general audience — stripping away the complexity while preserving
-              the accuracy. Every data point, every curve, every default value
-              comes from peer-reviewed clinical literature.
+              Every drug half-life value, every pharmacokinetic parameter, and
+              every default value in HalfLife is sourced from peer-reviewed
+              clinical literature, including{" "}
+              <em>Goodman &amp; Gilman&apos;s The Pharmacological Basis of
+              Therapeutics</em>
+              , FDA drug labels, and published pharmacokinetic studies.
             </p>
+            {/* Credential tags */}
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "0.5rem", marginTop: "1.25rem" }}>
+              {["Licensed Pharmacist", "Pharmacokinetics", "Clinical Pharmacy", "Drug Dosing", "ADME"].map((tag) => (
+                <span
+                  key={tag}
+                  style={{
+                    fontFamily: "var(--font-mono), ui-monospace, monospace",
+                    fontSize: "0.6875rem",
+                    fontWeight: 500,
+                    letterSpacing: "0.06em",
+                    color: "var(--ink-soft)",
+                    backgroundColor: "var(--paper)",
+                    border: "1px solid var(--rule)",
+                    borderRadius: "4px",
+                    padding: "0.25rem 0.625rem",
+                  }}
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
           </div>
 
           {/* Vibed Lab */}
@@ -244,5 +332,6 @@ export default function AboutPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

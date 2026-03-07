@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Terms of Service — HalfLife by Vibed Lab",
+  title: "Terms of Service",
   description:
     "Terms of service for HalfLife. This tool is for educational purposes only and is not a substitute for professional medical advice.",
   openGraph: {
-    title: "Terms of Service — HalfLife by Vibed Lab",
+    title: "Terms of Service",
     description:
       "Terms of service for HalfLife. Educational purposes only — not medical advice.",
     url: "https://halflife.vibed-lab.com/terms",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Terms of Service — HalfLife by Vibed Lab",
+    title: "Terms of Service",
     description: "Educational purposes only — not medical advice.",
   },
 };
