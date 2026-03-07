@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pharmacology Glossary — HalfLife by Vibed Lab",
+  title: "Pharmacology Glossary",
   description:
     "A comprehensive pharmacology glossary covering 40+ terms: half-life, bioavailability, clearance, steady state, volume of distribution, and more. Plain-language definitions for patients and students.",
   openGraph: {

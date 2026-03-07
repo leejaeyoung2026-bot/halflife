@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — HalfLife by Vibed Lab",
+  title: "Contact",
   description:
     "Get in touch with the HalfLife team. Suggest a drug to add, report a data error, or ask a question about the pharmacokinetics simulator.",
   openGraph: {
