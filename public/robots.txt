@@ -1,0 +1,3 @@
+User-Agent: *
+Allow: /
+Sitemap: https://halflife.vibed-lab.com/sitemap.xml
