@@ -105,6 +105,12 @@ const useCases = [
 export default function OtcPainRelieversPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="A Pharmacist's Guide to OTC Pain Relievers"
+        description="Compare acetaminophen, ibuprofen, aspirin, and naproxen — half-lives, dosing, and mechanisms."
+        url="https://halflife.vibed-lab.com/learn/otc-pain-relievers"
+        datePublished="2026-03-08"
+      />
       <style>{`
         .article-link {
           color: var(--accent);

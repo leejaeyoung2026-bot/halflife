@@ -70,6 +70,12 @@ const dangerousInteractions = [
 export default function DrugInteractionsPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="Drug Interactions: When Medications Collide"
+        description="Understand CYP enzyme inhibition, induction, and how medications change each other's half-life."
+        url="https://halflife.vibed-lab.com/learn/drug-interactions"
+        datePublished="2026-03-08"
+      />
       <style>{`
         .article-link {
           color: var(--accent);

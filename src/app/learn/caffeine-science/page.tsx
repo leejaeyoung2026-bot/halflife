@@ -200,6 +200,12 @@ const linkStyle: React.CSSProperties = {
 export default function CaffeineSciencePage() {
   return (
     <section style={{ padding: "10rem 2rem 6rem" }}>
+      <ArticleJsonLd
+        title="The Science Behind Caffeine"
+        description="A pharmacist's deep dive into how caffeine works, individual variation, and optimal consumption."
+        url="https://halflife.vibed-lab.com/learn/caffeine-science"
+        datePublished="2026-03-08"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto" }}>
 
         {/* Mono label */}

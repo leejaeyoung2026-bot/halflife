@@ -66,6 +66,12 @@ const dosingIntervals = [
 export default function DosingSchedulesPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="Why Dosing Schedules Exist: The Science of Medication Timing"
+        description="Why some medications are taken once daily and others every 4 hours — and what happens if you miss a dose."
+        url="https://halflife.vibed-lab.com/learn/dosing-schedules"
+        datePublished="2026-03-08"
+      />
       <style>{`
         .article-link {
           color: var(--accent);

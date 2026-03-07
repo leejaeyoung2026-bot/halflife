@@ -44,6 +44,12 @@ const commonDrugHalfLives = [
 export default function WhatIsDrugHalfLifePage() {
   return (
     <>
+      <ArticleJsonLd
+        title="What is Drug Half-Life? A Complete Guide"
+        description="Learn what drug half-life means, how it's calculated, and why it matters for medication dosing. A pharmacist-written guide."
+        url="https://halflife.vibed-lab.com/learn/what-is-drug-half-life"
+        datePublished="2026-03-08"
+      />
       <style>{`
         .learn-nav-link {
           font-family: var(--font-sans), ui-sans-serif, sans-serif;

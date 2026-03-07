@@ -86,6 +86,12 @@ const routeData = [
 export default function BioavailabilityPage() {
   return (
     <>
+      <ArticleJsonLd
+        title="Bioavailability: Why How You Take a Drug Matters"
+        description="How route of administration, first-pass metabolism, and formulation affect drug absorption."
+        url="https://halflife.vibed-lab.com/learn/bioavailability"
+        datePublished="2026-03-08"
+      />
       <style>{`
         .article-link {
           color: var(--accent);

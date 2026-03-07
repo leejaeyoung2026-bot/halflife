@@ -27,6 +27,12 @@ export const metadata: Metadata = {
 export default function Pharmacokinetics101Page() {
   return (
     <>
+      <ArticleJsonLd
+        title="Pharmacokinetics 101: How Drugs Work in Your Body"
+        description="A beginner-friendly guide to ADME — absorption, distribution, metabolism, and elimination."
+        url="https://halflife.vibed-lab.com/learn/pharmacokinetics-101"
+        datePublished="2026-03-08"
+      />
       <style>{`
         .learn-nav-link {
           font-family: var(--font-sans), ui-sans-serif, sans-serif;

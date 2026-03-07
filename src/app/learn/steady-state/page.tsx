@@ -180,6 +180,12 @@ const linkStyle: React.CSSProperties = {
 export default function SteadyStatePage() {
   return (
     <section style={{ padding: "10rem 2rem 6rem" }}>
+      <ArticleJsonLd
+        title="Understanding Steady State in Pharmacokinetics"
+        description="Learn what steady state means, why it takes 4-5 half-lives to reach, and why your doctor tells you to wait."
+        url="https://halflife.vibed-lab.com/learn/steady-state"
+        datePublished="2026-03-08"
+      />
       <div style={{ maxWidth: "800px", margin: "0 auto" }}>
 
         {/* Mono label */}
