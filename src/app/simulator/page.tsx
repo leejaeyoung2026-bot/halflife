@@ -257,7 +257,7 @@ function ConcentrationChart({
     ctx.translate(12, pad.top + chartH / 2);
     ctx.rotate(-Math.PI / 2);
     ctx.textAlign = "center";
-    ctx.fillText("Concentration (%)", 0, 0);
+    ctx.fillText("% of Peak (Cmax)", 0, 0);
     ctx.restore();
 
     // ── Ink label: drug name ──
