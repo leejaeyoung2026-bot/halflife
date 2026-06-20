@@ -104,10 +104,12 @@ export function calculateConcentration(
 
   if (cmax <= 0) return 0;
 
-  // Scale by bioavailability (relative; since we normalize to 100, F only
-  // affects relative shape when comparing across doses — keep amplitude consistent)
+  // Normalized to % of this drug's own single-dose Cmax (peak = 100%).
+  // Bioavailability is intentionally NOT applied here: the curve is already
+  // self-normalized to its own peak, so multiplying by F would cap every
+  // drug below 100% of its own peak and break the "% of Peak" Y-axis.
   const raw = batemanRaw(timeHours, ke, ka);
-  const normalized = (raw / cmax) * 100 * bioavailability;
+  const normalized = (raw / cmax) * 100;
 
   // Clamp to [0, 100]
   return Math.max(0, Math.min(100, normalized));
@@ -169,9 +171,11 @@ export function calculateMultipleDose(
       totalConc += batemanRaw(elapsed, ke, ka);
     }
 
-    // Normalize: express as % of single-dose Cmax, scaled by bioavailability
+    // Normalize: express as % of single-dose Cmax. Bioavailability is NOT
+    // applied — the curve is self-normalized to single-dose peak, so F would
+    // wrongly deflate steady-state peak/trough below the "% of Peak" axis.
     const normalized = cmaxSingle > 0
-      ? (totalConc / cmaxSingle) * 100 * bioavailability
+      ? (totalConc / cmaxSingle) * 100
       : 0;
 
     points.push({ time: t, concentration: Math.max(0, normalized) });
