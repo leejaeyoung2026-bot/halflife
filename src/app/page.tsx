@@ -5,11 +5,11 @@ import AdUnit from "@/components/AdUnit";
 export const metadata: Metadata = {
   title: "See How Drugs Move Through Your Body",
   description:
-    "Visualize drug absorption, half-life, and elimination with beautiful, interactive simulations. Explore 35+ common drugs with clinically accurate pharmacokinetic data. Built by a licensed pharmacist.",
+    "Visualize drug absorption, half-life, and elimination with beautiful, interactive simulations. Explore 30+ common drugs with clinically accurate pharmacokinetic data. Built by a licensed pharmacist.",
   openGraph: {
     title: "HalfLife — See How Drugs Move Through Your Body",
     description:
-      "Visualize drug absorption, half-life, and elimination with beautiful, interactive simulations. Explore 35+ common drugs. Built by a licensed pharmacist.",
+      "Visualize drug absorption, half-life, and elimination with beautiful, interactive simulations. Explore 30+ common drugs. Built by a licensed pharmacist.",
     url: "https://halflife.vibed-lab.com",
     siteName: "HalfLife by Vibed Lab",
     type: "website",
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "HalfLife — See How Drugs Move Through Your Body",
     description:
-      "Visualize drug absorption, half-life, and elimination with beautiful, interactive simulations. Explore 35+ common drugs. Built by a licensed pharmacist.",
+      "Visualize drug absorption, half-life, and elimination with beautiful, interactive simulations. Explore 30+ common drugs. Built by a licensed pharmacist.",
   },
 };
 
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 const features = [
   {
     icon: "Rx",
-    title: "35+ Common Drugs",
+    title: "30+ Common Drugs",
     description:
       "From caffeine to prescription medications, explore accurate half-life data sourced from clinical pharmacokinetic references.",
   },
@@ -56,7 +56,7 @@ const steps = [
     number: "01",
     title: "Pick a Drug",
     description:
-      "Choose from 35+ common medications or enter a custom half-life value.",
+      "Choose from 30+ common medications or enter a custom half-life value.",
   },
   {
     number: "02",
@@ -76,7 +76,7 @@ const referenceTable = [
   { drug: "Caffeine",        halfLife: "3–7 h",       dosing: "As needed", category: "Stimulant" },
   { drug: "Ibuprofen",       halfLife: "2 h",          dosing: "Q6H",       category: "Pain Relief" },
   { drug: "Acetaminophen",   halfLife: "2–3 h",        dosing: "Q4–6H",     category: "Pain Relief" },
-  { drug: "Aspirin",         halfLife: "0.25 h*",      dosing: "Varies",    category: "Pain Relief" },
+  { drug: "Aspirin",         halfLife: "0.25 h (parent) / 3.5 h (salicylate)*", dosing: "Varies", category: "Pain Relief" },
   { drug: "Fluoxetine",      halfLife: "1–6 days",     dosing: "Daily",     category: "Mental Health" },
   { drug: "Amoxicillin",     halfLife: "1.5 h",        dosing: "Q8H",       category: "Antibiotic" },
   { drug: "Warfarin",        halfLife: "20–60 h",      dosing: "Daily",     category: "Cardiovascular" },
@@ -491,7 +491,7 @@ export default function HomePage() {
             }}
           >
             Visualize drug absorption, half-life, and elimination with
-            beautiful, interactive simulations. Explore 35+ common drugs with
+            beautiful, interactive simulations. Explore 30+ common drugs with
             clinically accurate data.
           </p>
 
@@ -516,7 +516,7 @@ export default function HomePage() {
 
           {/* Stats strip */}
           <div className="hl-stats-strip">
-            <span className="hl-stat-item">35+ drugs</span>
+            <span className="hl-stat-item">30+ drugs</span>
             <span className="hl-stat-dot" aria-hidden="true" />
             <span className="hl-stat-item">Free forever</span>
             <span className="hl-stat-dot" aria-hidden="true" />
@@ -650,7 +650,7 @@ export default function HomePage() {
             }}
           >
             Each half-life removes 50% of the remaining drug. After five half-lives
-            (&asymp;25 h for caffeine), &lt;3% remains — considered clinically
+            (&asymp;25 h for caffeine), &asymp;3% remains — considered clinically
             eliminated.
           </p>
         </div>
@@ -931,9 +931,10 @@ export default function HomePage() {
               lineHeight: 1.6,
             }}
           >
-            * Aspirin&apos;s pharmacological effect lasts far longer than its 15-minute plasma half-life because it
-            irreversibly inhibits COX enzymes. Platelet effects persist for the platelet&apos;s entire 7–10 day
-            lifespan.
+            * Aspirin itself has a ~15-minute (0.25 h) plasma half-life, but it is rapidly hydrolyzed to its active
+            metabolite salicylic acid (~3.5 h) — the value the simulator models. Its pharmacological effect lasts far
+            longer still because it irreversibly inhibits COX enzymes; platelet effects persist for the platelet&apos;s
+            entire 7–10 day lifespan.
           </p>
         </div>
       </section>
@@ -1031,7 +1032,7 @@ export default function HomePage() {
 
           <div style={{ textAlign: "center" }}>
             <Link href="/simulator" className="hl-explore-link">
-              Explore All 35+ Drugs in the Simulator
+              Explore All 30+ Drugs in the Simulator
             </Link>
           </div>
         </div>
